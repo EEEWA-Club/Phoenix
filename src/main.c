@@ -2,7 +2,6 @@
 #include "main.h"
 #include "stm32f4xx_hal.h"
 #include "led.h"
-#include "communication.h" 
 
 /* Private variables ---------------------------------------------------------*/
 SPI_HandleTypeDef hspi2;
@@ -26,27 +25,12 @@ int main(void)
   /* Initialize the LED */
   led_setup();
 
-  /* Initialize communication with NRF24L01 */
-  communication_init();
-
   /* Infinite loop */
   while (1)
   {
     // Toggle and delay the LED
     led_loop();
 
-    // Send and receive data using NRF24L01
-    uint8_t data_to_send[] = {0x01, 0x02, 0x03, 0x04, 0x05};
-    uint8_t received_data[5];
-    uint8_t data_length = sizeof(data_to_send);
-
-    communication_send_data(data_to_send, data_length);
-
-    HAL_Delay(1000); // Wait for a while
-
-    communication_receive_data(received_data, &data_length);
-
-    // Process received data as needed
   }
 }
 
