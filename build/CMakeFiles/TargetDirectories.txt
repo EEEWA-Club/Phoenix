@@ -1,0 +1,3 @@
+/Users/nathan/Desktop/Phoenix/build/CMakeFiles/Phoenix.elf.dir
+/Users/nathan/Desktop/Phoenix/build/CMakeFiles/edit_cache.dir
+/Users/nathan/Desktop/Phoenix/build/CMakeFiles/rebuild_cache.dir
