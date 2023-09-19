@@ -3,7 +3,7 @@ Pheonix is EEEWA's Flagship Modulised RC Car
 
 # Pre-Rerequisite
 - CMake: https://cmake.org/download/
-- ARM-Compiler: https://developer.arm.com/Tools%20and%20Software/Arm%20Compiler%20for%20Embedded
+- ARM-Compiler: https://developer.arm.com/downloads/-/gnu-rm
 
 # Setup
 - Quickly Automate Build and Cross Compile (Only on LINUX/MAC)
